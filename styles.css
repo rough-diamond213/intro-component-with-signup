@@ -122,3 +122,44 @@ small span {
   font-weight: 600;
   cursor: pointer;
 }
+
+
+@media (min-width:375px) and (max-width:1440px){
+  .container{
+    flex-direction:column;
+    margin: auto;
+  }
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 30%;
+  text-align: center;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1rem;
+  opacity: 90%;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20%;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.35);
+}
+
+h4{
+  width: 100%;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.35);
+}
+
+h4 span{
+  display: block;
+}
+
+small{
+  display: block;
+}
+
+}
