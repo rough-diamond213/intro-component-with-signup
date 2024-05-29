@@ -98,6 +98,10 @@ input {
   visibility: hidden;
 }
 
+.error-icon.error{
+  visibility: visible;
+}
+
 .input_field small{
   position: absolute;
   bottom: -25px;
