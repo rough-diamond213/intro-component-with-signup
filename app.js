@@ -4,6 +4,9 @@ const firstName = document.querySelector('.firstName');
 const lastName = document.querySelector('.lastName');
 const email = document.querySelector('.email');
 const password = document.querySelector('.password');
+const errorIcon = document.querySelector('.error-icon');
+const eyeIcon = document.getElementById('eye-icon');
+const errorText = document.querySelector('error-text');
 
 console.log(firstName);
 
