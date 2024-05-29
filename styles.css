@@ -73,6 +73,11 @@ form {
   border-radius: 1rem;
 }
 
+.input_field{
+  position: relative;
+  margin-bottom: 35px;
+}
+
 input {
   display: block;
   width: 100%;
@@ -86,8 +91,39 @@ input {
   transition: all 0.2s ease-in-out;
 }
 
+.error-icon{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.input_field small{
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  color: red;
+  visibility: hidden;
+}
+
+.input_field.error small{
+  visibility: visible;
+}
+.eye-icon{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 20px;
+  height: 25px;
+  visibility: visible;
+}
+
 input.error {
   border: 1px solid var(--red);
+}
+
+img.error{
+  visibility: visible;
 }
 
 input:hover,
@@ -108,6 +144,12 @@ button {
   text-transform: uppercase;
   margin-bottom: 1rem;
   cursor: pointer;
+  filter: drop-shadow(1px 4px hsl(154, 47%, 47%));
+}
+
+button:hover{
+  opacity: 80%;
+  filter: drop-shadow(1px 5px hsla(154, 63%, 29%, 0.74));
 }
 
 small {
