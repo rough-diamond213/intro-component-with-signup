@@ -7,6 +7,7 @@ const password = document.querySelector('.password');
 const errorIcon = document.querySelector('.error-icon');
 const eyeIcon = document.getElementById('eye-icon');
 const errorText = document.querySelector('error-text');
+const errorSampleText = document.querySelector('error-sample');
 
 console.log(firstName);
 
