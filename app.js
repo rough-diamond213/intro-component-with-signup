@@ -4,9 +4,9 @@ const firstName = document.querySelector('.firstName');
 const lastName = document.querySelector('.lastName');
 const email = document.querySelector('.email');
 const password = document.querySelector('.password');
-const errorIcon = document.querySelector('.error-icon');
+const errorIcon = document.querySelectorAll('.error-icon');
 const eyeIcon = document.getElementById('eye-icon');
-const errorText = document.querySelector('.error-text');
+const errorText = document.querySelectorAll('.error-text');
 const errorSampleText = document.querySelector('.error-sample');
 
 console.log(errorIcon)
@@ -31,15 +31,15 @@ form.addEventListener('submit', (e) => {
   }
 
   if (fName === '') {
-    errorIcon.classList.add('error');
+    errorIcon[0].classList.add('error');
   } else {
-    errorIcon.classList.remove('error')
+    errorIcon[0].classList.remove('error')
   }
 
   if (fName === '') {
-    errorText.classList.add('error');
+    errorText[0].classList.add('error');
   } else {
-    errorText.classList.remove('error')
+    errorText[0].classList.remove('error')
   }
   // Check last name
 
@@ -50,9 +50,15 @@ form.addEventListener('submit', (e) => {
   }
 
   if (lName === '') {
-    errorIcon.classList.add('error');
+    errorIcon[1].classList.add('error');
   } else {
-    errorIcon.classList.remove('error')
+    errorIcon[1].classList.remove('error')
+  }
+
+  if (lName === '') {
+    errorText[1].classList.add('error');
+  } else {
+    errorText[1].classList.remove('error')
   }
 
   // Check email
@@ -61,6 +67,18 @@ form.addEventListener('submit', (e) => {
     email.classList.add('error');
   } else {
     email.classList.remove('error');
+  }
+
+  if (!validateEmail(emailVal) || emailVal === ''){
+    errorIcon[2].classList.add('error');
+  } else {
+    errorIcon[2].classList.remove('error')
+  }
+
+  if (!validateEmail(emailVal) || emailVal === ''){
+    errorText[2].classList.add('error');
+  } else {
+    errorText[2].classList.remove('error')
   }
 
 
