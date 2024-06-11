@@ -6,8 +6,8 @@ const email = document.querySelector('.email');
 const password = document.querySelector('.password');
 const errorIcon = document.querySelector('.error-icon');
 const eyeIcon = document.getElementById('eye-icon');
-const errorText = document.querySelector('error-text');
-const errorSampleText = document.querySelector('error-sample');
+const errorText = document.querySelector('.error-text');
+const errorSampleText = document.querySelector('.error-sample');
 
 console.log(firstName);
 
@@ -26,6 +26,12 @@ form.addEventListener('submit', (e) => {
     firstName.classList.add('error');
   } else {
     firstName.classList.remove('error');
+  }
+
+  if (fName === '') {
+    errorIcon.classList.add('error');
+  } else {
+    errorIcon.classList.remove('error')
   }
   // Check last name
 
