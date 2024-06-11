@@ -103,7 +103,7 @@ input.error {
 
 
 .error-icon.error{
-  visibility: visible;
+  visibility: hidden;
 }
 
 
