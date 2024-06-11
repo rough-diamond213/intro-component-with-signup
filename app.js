@@ -41,11 +41,6 @@ form.addEventListener('submit', (e) => {
     lastName.classList.remove('error');
   }
 
-  if (lName === '') {
-    errorIcon.classList.add('error');
-  } else {
-    errorIcon.classList.remove('error')
-  }
   // Check email
 
   if (!validateEmail(emailVal) || emailVal === '') {
@@ -54,11 +49,6 @@ form.addEventListener('submit', (e) => {
     email.classList.remove('error');
   }
 
-  if (!validateEmail(emailVal) || emailVal === '') {
-    errorIcon.classList.add('error');
-  } else {
-    errorIcon.classList.remove('error')
-  }
 
   // Check password
 
