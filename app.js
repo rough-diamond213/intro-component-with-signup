@@ -40,12 +40,24 @@ form.addEventListener('submit', (e) => {
   } else {
     lastName.classList.remove('error');
   }
+
+  if (lastName === '') {
+    errorIcon.classList.add('error');
+  } else {
+    errorIcon.classList.remove('error')
+  }
   // Check email
 
   if (!validateEmail(emailVal) || emailVal === '') {
     email.classList.add('error');
   } else {
     email.classList.remove('error');
+  }
+
+  if (!validateEmail(emailVal) || emailVal === '') {
+    errorIcon.classList.add('error');
+  } else {
+    errorIcon.classList.remove('error')
   }
 
   // Check password
