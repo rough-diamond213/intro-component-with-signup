@@ -102,11 +102,11 @@ input.error {
   visibility: hidden;
 }
 
-/*
+
 .error-icon.error{
   visibility: visible;
 }
-*/
+
 
 .error-text{
   position: absolute;
@@ -116,21 +116,22 @@ input.error {
   /*visibility: hidden;*/
 }
 
-.input_field.error small{
+/*.input_field.error small{
   visibility: visible;
-}
+}*/
+
 .eye-icon{
   position: absolute;
   top: 20px;
   right: 50px;
   width: 20px;
   height: 25px;
-  visibility: visible;
+  visibility: hidden;
 }
 
-img.error{
+/*img.error{
   visibility: visible;
-}
+}*/
 
 input:hover,
 input:focus {
