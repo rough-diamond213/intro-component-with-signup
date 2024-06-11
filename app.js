@@ -41,7 +41,7 @@ form.addEventListener('submit', (e) => {
     lastName.classList.remove('error');
   }
 
-  if (lastName === '') {
+  if (lName === '') {
     errorIcon.classList.add('error');
   } else {
     errorIcon.classList.remove('error')
