@@ -9,6 +9,8 @@ const eyeIcon = document.getElementById('eye-icon');
 const errorText = document.querySelector('.error-text');
 const errorSampleText = document.querySelector('.error-sample');
 
+console.log(errorIcon)
+
 console.log(firstName);
 
 // console.log(firstName, lastName, email, password);
@@ -33,12 +35,24 @@ form.addEventListener('submit', (e) => {
   } else {
     errorIcon.classList.remove('error')
   }
+
+  if (fName === '') {
+    errorText.classList.add('error');
+  } else {
+    errorText.classList.remove('error')
+  }
   // Check last name
 
   if (lName === '') {
     lastName.classList.add('error');
   } else {
     lastName.classList.remove('error');
+  }
+
+  if (lName === '') {
+    errorIcon.classList.add('error');
+  } else {
+    errorIcon.classList.remove('error')
   }
 
   // Check email
