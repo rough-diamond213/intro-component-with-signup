@@ -95,7 +95,7 @@ input.error {
   border: 1px solid var(--red);
 }
 
-.error-icon.error{
+.error-icon{
   position: absolute;
   top: 20px;
   right: 10px;
