@@ -96,9 +96,10 @@ input.error {
 }
 
 .error-icon.error{
-  position: relative;
+  position: absolute;
   top: 20px;
   right: 10px;
+  visibility: hidden;
 }
 
 /*
