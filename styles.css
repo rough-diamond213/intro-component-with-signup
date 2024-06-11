@@ -91,7 +91,11 @@ input {
   transition: all 0.2s ease-in-out;
 }
 
-.error-icon{
+input.error {
+  border: 1px solid var(--red);
+}
+
+.error-icon.error{
   position: absolute;
   top: 20px;
   right: 10px;
@@ -122,10 +126,6 @@ input {
   width: 20px;
   height: 25px;
   visibility: visible;
-}
-
-input.error {
-  border: 1px solid var(--red);
 }
 
 img.error{
