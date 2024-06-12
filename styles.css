@@ -238,4 +238,8 @@ small{
   display: block;
 }
 
+.error-msg{
+  font-size: 15px;
+  top: 16px;
+  }
 }
