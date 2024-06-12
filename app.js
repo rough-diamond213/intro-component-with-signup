@@ -89,6 +89,17 @@ form.addEventListener('submit', (e) => {
   } else {
     password.classList.remove('error');
   }
+  if (passwordVal === '') {
+    errorIcon[3].classList.add('error');
+  } else {
+    errorIcon[3].classList.remove('error')
+  }
+
+  if (passwordVal === '') {
+    errorText[3].classList.add('error');
+  } else {
+    errorText[3].classList.remove('error')
+  }
 });
 
 //Validate email
