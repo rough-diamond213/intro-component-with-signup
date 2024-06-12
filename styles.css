@@ -133,6 +133,20 @@ input.error {
   visibility: visible;
 }
 
+.error-msg{
+  color: var(--red);
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  visibility: hidden;
+}
+
+.error-msg.error{
+  visibility: visible;
+}
+
 /*img.error{
   visibility: visible;
 }*/
