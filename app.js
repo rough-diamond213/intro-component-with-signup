@@ -7,7 +7,7 @@ const password = document.querySelector('.password');
 const errorIcon = document.querySelectorAll('.error-icon');
 const eyeIcon = document.getElementById('eye-icon');
 const errorText = document.querySelectorAll('.error-text');
-const errorSampleText = document.querySelector('.error-msg');
+const errorMsg = document.querySelector('.error-msg');
 
 console.log(errorIcon)
 
@@ -26,6 +26,7 @@ form.addEventListener('submit', (e) => {
   // Check first name
   if (fName === '') {
     firstName.classList.add('error');
+    firstName.placeholder = '';
   } else {
     firstName.classList.remove('error');
   }
@@ -45,6 +46,7 @@ form.addEventListener('submit', (e) => {
 
   if (lName === '') {
     lastName.classList.add('error');
+    lastName.placeholder ='';
   } else {
     lastName.classList.remove('error');
   }
@@ -65,6 +67,7 @@ form.addEventListener('submit', (e) => {
 
   if (!validateEmail(emailVal) || emailVal === '') {
     email.classList.add('error');
+    email.placeholder ='';
   } else {
     email.classList.remove('error');
   }
@@ -81,11 +84,18 @@ form.addEventListener('submit', (e) => {
     errorText[2].classList.remove('error')
   }
 
+  if (!validateEmail(emailVal) || emailVal === ''){
+    errorMsg.classList.add('error');
+  } else {
+    errorMsg.classList.remove('error')
+  }
+
 
   // Check password
 
   if (passwordVal === '') {
     password.classList.add('error');
+    password.placeholder ='';
   } else {
     password.classList.remove('error');
   }
